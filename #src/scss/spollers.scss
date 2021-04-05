@@ -1,0 +1,55 @@
+.spollers {
+  margin: 0px 0px 50px 0px;
+
+  &__item {
+    margin: 0 0 20px 0;
+    &:last-child {
+      margin: 0 0 0 0;
+    }
+  }
+
+  &__title {
+    background-color: tomato;
+    cursor: pointer;
+    padding: 29px;
+    position: relative;
+    padding: 20px 70px 20px 20px;
+
+    &::before {
+      content: "";
+      width: 20px;
+      background-color: #fff;
+      height: 2px;
+      transform: translate(0, -50%) rotate(-45deg);
+      position: absolute;
+      right: 15px;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      background-color: #fff;
+      height: 2px;
+      transform: translate(0, -50%) rotate(45deg);
+      position: absolute;
+      right: 29px;
+      top: 50%;
+    }
+
+    &._active {
+      &::before {
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(0, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__body {
+    display: none;
+    padding: 20px 0 0 0;
+  }
+}

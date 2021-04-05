@@ -1,0 +1,35 @@
+<form class="form _src-item" data-ajax="true" method="POST" action="sendmail.php">
+  <fieldset class="form__line">
+    <label for="inp" class="form__label">Подпись поля</label>
+    <input class="input _date" id="inp" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля">
+  </fieldset>
+  <fieldset class="form__line">
+    <select class="form" name="form[]" id="">
+      <option value="1" selected="select">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="4">Four</option>
+    </select>
+  </fieldset>
+  <fieldset class="form__line">
+    <div class="quantity">
+      <div class="quantity__button quantity__button_plus"></div>
+      <div class="quantity__input">
+        <input type="text" name="form[]" autocomplete="off" value="1">
+      </div>
+      <div class="quantity__button quantity__button_minus"></div>
+    </div>
+  </fieldset>
+  <fieldset class="form__line">
+    <div class="price">
+      <div class="price__range">
+        <div class="price__inputs">
+          <input class="input" id="price-start" type="text" name="form[]" autocomplete="off">
+          <input class="input" id="price-end" type="text" name="form[]" autocomplete="off">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form__line"></div>
+  <button class="form__btn btn" type="submit">Отправить</button>
+</form>
