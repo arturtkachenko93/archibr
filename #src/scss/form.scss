@@ -32,9 +32,21 @@
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
   display: inline-flex;
-  padding: 0px 0px;
+  padding: 0px 20px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29 / 20 * 100%;
+  background-color: #ff6464;
+  color: $white;
+  border-radius: 2px;
+
   @media (min-width: 992px) {
     &:hover {
+      background-color: #bb4949;
     }
   }
   &._fw {

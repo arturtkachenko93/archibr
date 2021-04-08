@@ -40,9 +40,9 @@ $blue: #00a8cc;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
-  color: $black;
+  color: #21243d;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 23 / 16 * 100%;
   background-color: $white;
   font-family: Heebo, "Helvetica Neue", Helvetica, sans-serif;
 
@@ -81,6 +81,13 @@ body {
 @import "nouislider";
 @import "popup";
 @import "header";
+@import "hello";
+@import "text";
+@import "title";
+@import "recent";
+@import "featured-works";
+@import "works";
+@import "form";
 @import "footer";
 @import "home";
 @import "tabs";
@@ -95,4 +102,9 @@ body {
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
   flex: 1 1 auto;
+  padding-top: 30px;
+
+  @media (min-width: $desktop-width + px) {
+    padding-top: 78px;
+  }
 }

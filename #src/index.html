@@ -8,11 +8,78 @@
   <div class="wrapper">
     @@include('_header.html',{})
     <main class="page">
-      <section class="hello">
-
+      <section class="hello _container">
+        <div class="hello__wrapper">
+          <div class="hello__content">
+            <h1 class="hello__title title">Hi, I am John,<br>Creative Technologist</h1>
+            <p class="hello__text text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <a href="#" class="hello__btn btn">Download Resume</a>
+          </div>
+          <img class=" hello__avatar" src="img/avatar.png" alt="Мой аватар" width="170" height="170">
+        </div>
       </section>
-    </main>
-    @@include('_footer.html',{})
+      <section class="recent">
+        <div class="recent__wrapper _container">
+          <header class="recent__header">
+            <h2 class="recent__title">
+              <a class="recent__title title-posts" href="#">Recent posts</a>
+            </h2>
+            <a href="#" class="recent__view-all">View all</a>
+          </header>
+          <ul class="recent__list">
+            <li class="recent__item">
+              <article class="recent-post">
+                <h3 class="recent-post__title">Making a design system from scratch</h3>
+                <p class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</p>
+                <p class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint. Velit officia consequat duis enim velit mo
+                </p>
+              </article>
+            </li>
+            <li class="recent__item">
+              <article class="recent-post">
+                <h3 class="recent-post__title">Making a design system from scratch</h3>
+                <p class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</p>
+                <p class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="featured-works _container">
+        <h2 class="featured-works__title title-posts">Featured works</h2>
+        <ul class="works">
+          <li>
+            <article class="works__item">
+              <a class="works__image" href="#">
+                <img src="img/works/1.jpg" alt="work #1" width="246" height="180">
+              </a>
+              <div class="works__body">
+                <h3 class="works__title">Designing Dashboards</h3>
+                <div class="works__info">
+                  <span class="works__year">2020</span>
+                  <span class="works__category">Dashboard</span>
+                </div>
+                <p class="works__text text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                  enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+  </div>
+  </section>
+  </main>
+  @@include('_footer.html',{})
   </div>
   @@include('_js.html',{})
 </body>

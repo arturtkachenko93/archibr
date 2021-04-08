@@ -1,0 +1,9 @@
+.featured-works {
+  @media (min-width: $desktop-width + px) {
+    padding: 20px 148px 83px 148px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}

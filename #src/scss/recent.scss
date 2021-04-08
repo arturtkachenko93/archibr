@@ -1,0 +1,111 @@
+.recent {
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  background-color: #edf7fa;
+
+  &__wrapper {
+    padding-top: 20px;
+    padding-bottom: 38px;
+
+    @media (min-width: $desktop-width + px) {
+      padding: 20px 148px 32px 148px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+
+    @media (min-width: $tablet-width + px) {
+      flex: 1 1 auto;
+      margin-right: 20px;
+      text-align: start;
+
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+
+  &__view-all {
+    display: none;
+
+    @media (min-width: $tablet-width + px) {
+      display: block;
+      color: #00a8cc;
+      flex: 0 0 auto;
+
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+
+  &__list {
+    @media (min-width: $tablet-width + px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width + px) {
+      flex: 1 1 50%;
+      padding: 0 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.recent-post {
+  background-color: $white;
+  border-radius: 8px;
+  height: 100%;
+  padding: 12px 13px 22px 13px;
+
+  @media (min-width: $tablet-width + px) {
+    padding: 24px 30px 20px 23px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30 / 22 * 100%;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width + px) {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 38 / 26 * 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16 / 23 * 100%;
+    margin-bottom: 19px;
+
+    span {
+      margin: 0 25px;
+    }
+
+    @media (min-width: $tablet-width + px) {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18 / 26 * 100%;
+      margin-bottom: 15px;
+    }
+  }
+}

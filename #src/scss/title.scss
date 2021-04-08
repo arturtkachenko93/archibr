@@ -1,0 +1,19 @@
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40 / 32 * 100%;
+
+  @media (min-width: $tablet-width + px) {
+    font-size: 44px;
+    line-height: 60 / 44 * 100%;
+  }
+}
+
+.title-posts {
+  color: inherit;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width + px) {
+    font-size: 22px;
+  }
+}
