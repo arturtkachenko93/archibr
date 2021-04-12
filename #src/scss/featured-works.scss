@@ -1,9 +1,23 @@
 .featured-works {
+  padding-top: 22px;
+  margin-bottom: 120px;
+
+
   @media (min-width: $desktop-width + px) {
-    padding: 20px 148px 83px 148px;
+    padding: 20px 148px 0 148px;
+    margin-bottom: 83px;
   }
 
+
   &__title {
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 22px;
+    text-align: center;
+
+    @media (min-width: $tablet-width + px) {
+      font-size: 22px;
+      margin-bottom: 30px;
+      text-align: start;
+    }
   }
 }

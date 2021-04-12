@@ -1,5 +1,40 @@
-footer{}
-//====================================================================================================
+.footer {
+  padding-bottom: 54px;
 
-//====================================================================================================
+  &__content {
+    text-align: center;
+  }
 
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+
+  &__social-item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__social-link {
+    font-size: 30px;
+    color: inherit;
+    transition: all 0.3s ease 0s;
+
+    @media (min-width: $desktop-width + px) {
+
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 22 / 14 * 100%;
+    text-align: center;
+  }
+}

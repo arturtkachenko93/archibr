@@ -71,20 +71,20 @@
   background-color: $white;
   border-radius: 8px;
   height: 100%;
-  padding: 12px 13px 22px 13px;
+  padding: 12px 12px 22px 13px;
 
   @media (min-width: $tablet-width + px) {
     padding: 24px 30px 20px 23px;
   }
 
   &__title {
-    font-size: 22px;
+    @include adaptiv-font(26, 22, 0);
     font-weight: 700;
     line-height: 30 / 22 * 100%;
     margin-bottom: 12px;
 
     @media (min-width: $tablet-width + px) {
-      font-size: 26px;
+      // font-size: 26px;
       font-weight: 700;
       line-height: 38 / 26 * 100%;
       margin-bottom: 25px;
@@ -98,7 +98,7 @@
     margin-bottom: 19px;
 
     span {
-      margin: 0 25px;
+      margin: 0 19px;
     }
 
     @media (min-width: $tablet-width + px) {

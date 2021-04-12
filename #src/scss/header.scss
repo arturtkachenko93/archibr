@@ -53,7 +53,8 @@
       padding-top: 100px;
       transition: transform 0.8s ease 0s;
       transform: translate(0, -100%);
-      background-color: rgba($white, 0.7);
+      background-color: rgba($white, 0.8);
+      z-index: 9999;
 
       &._active {
         transform: translate(0, 0);

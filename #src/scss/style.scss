@@ -22,7 +22,7 @@ $fontFamily: "Heebo";
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
-$maxWidth: 1920;
+$maxWidth: 1152;
 $maxWidthContainer: 1920;
 $md1: $maxWidthContainer + 12px;
 $desktop-width: 1152;
@@ -41,7 +41,7 @@ $blue: #00a8cc;
 @import "null";
 body {
   color: #21243d;
-  font-size: 16px;
+  font-size: include adaptiv-font(26, 22, 2);
   line-height: 23 / 16 * 100%;
   background-color: $white;
   font-family: Heebo, "Helvetica Neue", Helvetica, sans-serif;
@@ -80,6 +80,7 @@ body {
 @import "tippy";
 @import "nouislider";
 @import "popup";
+@import "mixins";
 @import "header";
 @import "hello";
 @import "text";
@@ -88,6 +89,7 @@ body {
 @import "featured-works";
 @import "works";
 @import "form";
+@import "ui";
 @import "footer";
 @import "home";
 @import "tabs";
