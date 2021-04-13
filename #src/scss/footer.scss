@@ -1,18 +1,15 @@
 .footer {
-  padding-bottom: 54px;
-
-  &__content {
-    text-align: center;
-  }
+  padding: 0 70px 44px 70px;
 
   &__social-list {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template: min-content / repeat(4, 1fr);
+    justify-items: center;
     margin-bottom: 26px;
   }
 
   &__social-item {
-    margin-right: 35px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-right: 0;

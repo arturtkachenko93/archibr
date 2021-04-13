@@ -3311,25 +3311,22 @@ body.ie ._ibg img {
 }
 
 .footer {
-  padding-bottom: 54px;
-}
-
-.footer__content {
-  text-align: center;
+  padding: 0 70px 44px 70px;
 }
 
 .footer__social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content;
+  -ms-grid-rows: min-content;
+  -ms-grid-columns: (1fr)[4];
+      grid-template: min-content/repeat(4, 1fr);
+  justify-items: center;
   margin-bottom: 26px;
 }
 
 .footer__social-item {
-  margin-right: 35px;
+  margin-bottom: 10px;
 }
 
 .footer__social-item:last-child {
@@ -4155,7 +4152,7 @@ body.ie ._ibg img {
         -ms-transform: translate(0, -100%);
             transform: translate(0, -100%);
     background-color: rgba(255, 255, 255, 0.8);
-    z-index: 9999;
+    z-index: 1;
   }
 
   .menu__body._active {
